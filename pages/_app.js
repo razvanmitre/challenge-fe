@@ -4,7 +4,6 @@ import Head from 'next/head'
 import '../styles/app.scss'
 
 const MyApp = ({ Component, pageProps: { ...pageProps }, router }) => {
-
   return (
     <>
       <Head>

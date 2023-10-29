@@ -7,9 +7,6 @@ module.exports = withBundleAnalyzer({
   env: {},
   images: {
     domains: [],
-  },
-  experimental: {
-    appDir: true,
-    isrMemoryCacheSize: 50,
+    unoptimized: true,
   },
 })

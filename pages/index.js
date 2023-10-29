@@ -8,7 +8,7 @@ const luckyOptions = [
 ]
 
 function randomInteger(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
+  return Math.floor(Math.random() * (max - min + 1)) + min
 }
 
 const Index = () => {
@@ -25,9 +25,10 @@ const Index = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
+
     setLoading(true)
     setAnswerState({ value: null })
-    fetch(`http://127.0.0.1:3000/v1/book/question?q=${formState.question}`, {
+    fetch(`http://3.127.63.162:8088/v1/book/question?q=${formState.question}`, {
       method: 'GET',
       headers: {
         Accept: 'application/json, text/plain, */*',
@@ -94,7 +95,7 @@ const Index = () => {
               className="h-52 w-auto mx-auto rounded-lg"
               width="600"
               height="882"
-              src="/images/book.2a513df7cb86.png"
+              src="/images/book.png"
               loading="lazy"
               alt="Minimalist-Entrepreneur"
             />
@@ -104,8 +105,8 @@ const Index = () => {
       </div>
       <div>
         <p className="text-gray-500 my-4 leading-relaxed">
-          This is an experiment in using AI to make my book's content more
-          accessible. Ask a question and AI'll answer it in real-time:
+          This is an experiment in using AI to make my book&apos;s content more
+          accessible. Ask a question and AI&apos;ll answer it in real-time:
         </p>
         <form
           onSubmit={(e) => {
@@ -140,7 +141,7 @@ const Index = () => {
               disabled={loading}
               className="button__secondary"
             >
-              I'm feeling lucky
+              I&apos;m feeling lucky
             </button>
           </div>
         </form>

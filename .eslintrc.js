@@ -29,11 +29,6 @@ module.exports = {
       pragma: 'React',
       version: 'detect',
     },
-    'import/resolver': {
-      jsconfig: {
-        config: 'jsconfig.json',
-      },
-    },
   },
   rules: {
     'react-hooks/rules-of-hooks': 'off',
