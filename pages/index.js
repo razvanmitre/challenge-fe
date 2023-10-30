@@ -116,7 +116,7 @@ const Index = () => {
           <textarea
             className="py-2 px-3 rounded-lg border border-black w-full resize-none font-mono text-lg leading-normal"
             ref={textRef}
-            disabled={loading}
+            disabled={loading || typing}
             required
             rows="3"
             value={formState.question}
